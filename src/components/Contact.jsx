@@ -39,10 +39,10 @@ const Contact = () => {
 
   // EmailJS Configuration - Replace these with your actual values
   const EMAILJS_CONFIG = {
-    SERVICE_ID: 'service_qa1k4ew', // Replace with your EmailJS service ID
-    NOTIFICATION_TEMPLATE_ID: 'template_pxrovri', // Replace with your notification template ID
-    THANKYOU_TEMPLATE_ID: 'template_z0muc5f', // Replace with your thank you template ID
-    PUBLIC_KEY: 'vtqZQbySk6vjlzXbC' // Replace with your EmailJS public key
+    SERVICE_ID: 'service_yzt5lgc', // Replace with your EmailJS service ID
+    NOTIFICATION_TEMPLATE_ID: 'template_u1ifacb', // Replace with your notification template ID
+    THANKYOU_TEMPLATE_ID: 'template_jet4x7h', // Replace with your thank you template ID
+    PUBLIC_KEY: 'PYfBDpI-F_HQAgr7y' // Replace with your EmailJS public key
   };
 
   const handleSubmit = async (e) => {
@@ -68,17 +68,17 @@ const Contact = () => {
         reply_to: formData.email,
         subject: formData.subject || 'New Contact Form Message',
         message: formData.message,
-        to_name: 'Farhan Rahman',
-        to_email: 'farhanrahman0027@gmail.com'
+        to_name: 'David Gill',
+        to_email: 'crackfire217@gmail.com'
       };
 
       // Prepare template parameters for thank you email (to user)
       const thankYouParams = {
         to_name: formData.name,
         to_email: formData.email,
-        reply_to: 'farhanrahman0027@gmail.com',
+        reply_to: 'crackfire217@gmail.com',
         subject: formData.subject || 'New Contact Form Message',
-        from_name: 'Farhan Rahman',
+        from_name: 'David Gill',
         user_email: formData.email // Alternative parameter name
       };
 
@@ -121,7 +121,7 @@ const Contact = () => {
       } else if (error.status === 402) {
         errorMessage += "Service temporarily unavailable. Please try again later.";
       } else {
-        errorMessage += "Please try again or contact me directly at farhanrahman0027@gmail.com";
+        errorMessage += "Please try again or contact me directly at crackfire217@gmail.com";
       }
       
       setStatus({
@@ -137,19 +137,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "farhanrahman0027@gmail.com",
-      href: "mailto:farhanrahman0027@gmail.com",
+      value: "crackfire217@gmail.com",
+      href: "mailto:crackfire217@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 (754) 697-4978",
-      href: "tel:+917546974978",
+      value: "+1 (678) 397-8986",
+      href: "tel:+16783978986",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Hyderabad, India",
+      value: "Atlanta, GA, USA",
       href: null,
     },
   ];
@@ -164,7 +164,7 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/farhanrahman0027",
+      href: "https://github.com/redforest217",
       color: "hover:text-gray-800",
     },
   ];
@@ -182,17 +182,9 @@ const Contact = () => {
           <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 animate-slide-up transition-colors duration-300 leading-tight ${
             darkMode ? 'text-white' : 'text-[#2C3E50]'
           }`}>
-            Let's Work{' '}
-            <span className="bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] bg-clip-text text-transparent block sm:inline">
-              Together
-            </span>
+            Contact Me
           </h2>
-          <p className={`text-base sm:text-lg md:text-xl max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-2 sm:px-0
-          ${darkMode ? "text-gray-300" : "text-gray-600"}`}>
-            Ready to bring your ideas to life? I'm here to help you build
-            something amazing. Let's discuss your project and see how we can
-            collaborate.
-          </p>
+
         </div>
 
         {/* Main Content Grid - Responsive Layout */}
@@ -253,27 +245,7 @@ const Contact = () => {
                   Follow Me
                 </p>
                 <div className="flex space-x-3 sm:space-x-4">
-                  {socialLinks.map((social, index) => {
-                    const IconComponent = social.icon;
-                    return (
-                      <a
-                        key={index}
-                        href={social.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110
-                        ${darkMode
-                          ? "bg-slate-800 text-gray-300"
-                          : "bg-gray-100 text-gray-600"
-                        }
-                        ${social.color}
-                      `}
-                        aria-label={social.label}
-                      >
-                        <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
-                      </a>
-                    );
-                  })}
+                  Let's connect! 🚍
                 </div>
               </div>
             </div>
@@ -292,12 +264,11 @@ const Contact = () => {
                 <div className="min-w-0 flex-1">
                   <h3 className={`text-sm sm:text-base font-semibold mb-1
                   ${darkMode ? "text-blue-200" : "text-blue-900"}`}>
-                    Quick Response Guaranteed
+                    Anytime Call Me
                   </h3>
                   <p className={`text-xs sm:text-sm leading-relaxed
                   ${darkMode ? "text-blue-300" : "text-blue-700"}`}>
-                    I typically respond to all inquiries within 24 hours. For
-                    urgent projects, feel free to call me directly.
+                    We are all threads in the fabric of connection, woven stronger together.
                   </p>
                 </div>
               </div>

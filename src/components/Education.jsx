@@ -1,14 +1,18 @@
 import React from "react";
 import { useDarkMode } from "../DarkModeContext"; // Import the dark mode context
+import GeorgiaLogo from "../assets/georgia.jpg"; // Import your logo image 
+import WebLogo from "../assets/web.jpg"; // Import your logo image 
+
 const educationDetails = [
   {
     id: 1,
-    degree: "Bachelor of Technology in Computer Science",
-    institution: "Maulana Azad National Urdu University",
-    location: "Hyderabad, Telangana",
-    duration: "2021 - 2025",
-    status: "Final Year",
-    gpa: "8.29 CGPA",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "Georgia State University",
+    location: "Atlanta, GA, USA",
+    duration: "2012 - 2017",
+    status: "Graduated",
+    gpa: "3.7 GPA",
+    logo: GeorgiaLogo,
     
     highlights: [
       "Specialized in Data Structures & Algorithms, Database Management Systems",
@@ -20,17 +24,18 @@ const educationDetails = [
   },
   {
     id: 2,
-    degree: "Higher Secondary Certificate (PCM)",
-    institution: "Al Irfan Secondary School",
-    location: "India",
-    duration: "Completed 2020",
-    status: "Graduated",
+    degree: "Continued Education & Web Technologies",
+    institution: "Self-Directed Learning & Online Courses",
+    location: "Atlanta, GA, USA",
+    duration: "2016-2018",
+    status: "Continuing",
     gpa: "77.8%",
+    logo: WebLogo,
     semester: "",
     highlights: [
-      "Physics, Chemistry, and Mathematics specialization",
-      "Developed strong analytical and problem-solving capabilities",
-      "Foundation in mathematical reasoning and scientific methodology"
+      "Built hands-on experience with modern web technologies through personal projects and continuous learning",
+      "Completed courses and tutorials on platforms like Udemy, freeCodeCamp, and YouTube covering",
+      "Self learning asian languages like Japanese, and Chinese",
     ],
     type: "secondary"
   },
@@ -166,22 +171,7 @@ const Education = () => {
                         ? "border-blue-500/30 bg-blue-500/10 hover:bg-blue-500/20" 
                         : "border-blue-400/30 bg-blue-50 hover:bg-blue-100"
                     }`}>
-                      <div className="flex items-center justify-center gap-2 mb-1">
-                        <div className={`w-4 h-4 ${darkMode ? "text-yellow-400" : "text-yellow-500"}`}>
-                          <TrophyIcon />
-                        </div>
-                        <span className="text-xs font-medium uppercase tracking-wider opacity-70">
-                          Score
-                        </span>
-                      </div>
-                      <div className="text-xl font-bold">
-                        {edu.gpa}
-                      </div>
-                      {edu.semester && (
-                        <div className="text-xs opacity-70 mt-1">
-                          {edu.semester}
-                        </div>
-                      )}
+                      <img src={edu.logo} alt="Georgia State University" className=" mx-auto h-18 rounded-full object-fit"/>
                     </div>
                   </div>
 

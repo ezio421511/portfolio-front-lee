@@ -12,6 +12,7 @@ import {
   FaGitAlt,
   FaGithub,
   FaBootstrap,
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -22,7 +23,13 @@ import {
   SiFirebase,
   SiTypescript,
   SiFigma,
+  SiGraphql,
+  SiPostgresql,
+  SiJest,
 } from "react-icons/si";
+import { RiVuejsFill } from "react-icons/ri";
+import { TbBrandReactNative } from "react-icons/tb";
+import { FaAws } from "react-icons/fa6";
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [animatedSkills, setAnimatedSkills] = useState(new Set());
@@ -33,7 +40,6 @@ const Skills = () => {
     icon: <Code2 className="w-4 h-4" />,
     color: "from-[#2c3e50] to-[#4ca1af]",
     skills: [
-      { name: "Java", level: 75, icon: <FaJava className="text-orange-500" /> },
       { name: "Python", level: 45, icon: <FaPython className="text-yellow-400" /> },
       { name: "JavaScript", level: 90, icon: <FaJs className="text-yellow-300" /> },
       { name: "TypeScript", level: 80, icon: <SiTypescript className="text-blue-400" /> },
@@ -43,8 +49,11 @@ const Skills = () => {
     icon: <Monitor className="w-4 h-4" />,
     color: "from-[#1f4037] to-[#99f2c8]",
     skills: [
-      { name: "React", level: 85, icon: <FaReact className="text-cyan-300" /> },
-      { name: "Next.js", level: 80, icon: <SiNextdotjs className="text-white" /> },
+      { name: "React", level: 90, icon: <FaReact className="text-cyan-300" /> },
+      { name: "Next.js", level: 85, icon: <SiNextdotjs className="text-white" /> },
+      { name: "Vue.js", level: 80, icon: <RiVuejsFill className="text-white" /> },
+      { name: "Angular", level: 75, icon: <FaAngular className="text-cyan-300" /> },
+      { name: "React Native", level: 80, icon: <TbBrandReactNative className="text-orange-400" /> },
       { name: "HTML/CSS", level: 90, icon: <FaHtml5 className="text-orange-400" /> },
     ],
   },
@@ -52,8 +61,9 @@ const Skills = () => {
     icon: <Server className="w-4 h-4" />,
     color: "from-[#0f2027] to-[#203a43]",
     skills: [
-      { name: "Node.js", level: 70, icon: <FaNodeJs className="text-green-400" /> },
-      { name: "Express.js", level: 75, icon: <SiExpress className="text-gray-400" /> },
+      { name: "Node.js", level: 75, icon: <FaNodeJs className="text-green-400" /> },
+      { name: "Express.js", level: 80, icon: <SiExpress className="text-gray-400" /> },
+      { name: "GraphQL", level: 80, icon: <SiGraphql className="text-gray-400" /> },
     ],
   },
   Database: {
@@ -61,7 +71,7 @@ const Skills = () => {
     color: "from-[#42275a] to-[#734b6d]",
     skills: [
       { name: "MongoDB", level: 75, icon: <SiMongodb className="text-green-600" /> },
-      { name: "MySQL", level: 75, icon: <SiMysql className="text-blue-600" /> },
+      { name: "PostgreSQL", level: 75, icon: <SiPostgresql className="text-blue-600" /> },
       { name: "Firebase", level: 70, icon: <SiFirebase className="text-yellow-400" /> },
     ],
   },
@@ -70,9 +80,11 @@ const Skills = () => {
     color: "from-[#232526] to-[#414345]",
     skills: [
       { name: "Git/GitHub", level: 80, icon: <FaGithub className="text-gray-300" /> },
-      { name: "Tailwind CSS", level: 80, icon: <SiTailwindcss className="text-cyan-400" /> },
-      { name: "Bootstrap", level: 75, icon: <FaBootstrap className="text-purple-500" /> },
+      { name: "Tailwind CSS", level: 85, icon: <SiTailwindcss className="text-cyan-400" /> },
+      { name: "Bootstrap", level: 85, icon: <FaBootstrap className="text-purple-500" /> },
       { name: "Figma", level: 70, icon: <SiFigma className="text-pink-500" /> },
+      { name: "Jest", level: 75, icon: <SiJest className="text-pink-500" /> },
+      { name: "AWS", level: 80, icon: <FaAws className="text-pink-500" /> },
     ],
   },
 };

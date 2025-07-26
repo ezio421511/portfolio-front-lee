@@ -11,6 +11,8 @@ import {
   FaRocket
 } from "react-icons/fa";
 import { useDarkMode } from "../DarkModeContext";
+import { FaMeta } from "react-icons/fa6";
+import { RiNetflixFill } from "react-icons/ri";
 
 const About = () => {
   const { darkMode } = useDarkMode();
@@ -53,10 +55,10 @@ const About = () => {
   };
 
   const stats = [
-    { number: "1+", label: "Years Experience", icon: FaCode },
-    { number: "10+", label: "Projects Completed", icon: FaRocket },
-    { number: "10+", label: "Happy Clients", icon: FaHeart },
-    { number: "∞", label: "Cups of Coffee", icon: FaCoffee },
+    { number: "8+ yrs", label: "Experience", icon: FaCode },
+    { number: "3 yrs", label: "Web Development!", icon: FaRocket },
+    { number: "2+ yrs", label: "Meta", icon: FaMeta },
+    { number: "3 yrs", label: "Netflix", icon: RiNetflixFill },
   ];
 
   const values = [
@@ -140,29 +142,28 @@ const About = () => {
                     darkMode ? "text-gray-300" : "text-gray-600"
                   }`}
                 >
-                  I'm a passionate full-stack developer who thrives on turning complex problems 
-                  into elegant, user-friendly solutions. With a strong foundation in modern web 
-                  technologies and a keen eye for design, I create digital experiences that not 
-                  only function flawlessly but also delight users.
+                 My name is David Lee Gill. — a developer who loves code and building sleek, fast, and user-friendly web apps.
+                 I’ve been working with React and modern JavaScript tools for over 7 years now.
+
                 </p>
+                  <p
+                  className={`text-lg leading-relaxed ${
+                    darkMode ? "text-gray-300" : "text-gray-600"
+                  }`}
+                > Along the way,
+                 I’ve had the chance to work at some amazing places like Meta and Netflix, where I helped build 
+                 everything from internal dashboards to content editing tools.
+</p>
                 <p
                   className={`text-lg leading-relaxed ${
                     darkMode ? "text-gray-300" : "text-gray-600"
                   }`}
                 >
-                  My journey in software development began with curiosity and has evolved into 
-                  a career driven by innovation. I specialize in React, Node.js, and modern 
-                  web technologies, always staying current with industry trends and best practices.
+                I specialize in React, Node.js, and modern 
+                  web technologies, always staying current with industry trends and best practices, also
+                I speak Japanese, dabble in Chinese, and I’m always up for remote projects.
                 </p>
-                <p
-                  className={`text-lg leading-relaxed ${
-                    darkMode ? "text-gray-300" : "text-gray-600"
-                  }`}
-                >
-                  When I'm not coding, you'll find me exploring new technologies, contributing 
-                  to open-source projects, or mentoring aspiring developers. I believe in the 
-                  power of technology to create positive change in the world.
-                </p>
+     
               </div>
             </motion.div>
 

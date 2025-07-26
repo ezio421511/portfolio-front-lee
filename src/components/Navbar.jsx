@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { useDarkMode } from "../DarkModeContext";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
 
 const Navbar = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -11,10 +11,11 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "#home", id: "home" },
     { name: "About", href: "#about", id: "about" },
+        { name: "Skills", href: "#skills", id: "skills" },
     { name: "Education", href: "#education", id: "education" },
     { name: "Experience", href: "#experience", id: "experience" },
     { name: "Projects", href: "#projects", id: "projects" },
-    { name: "Skills", href: "#skills", id: "skills" },
+
     { name: "Contact", href: "#sontact", id: "contact" },
   ];
 
@@ -90,7 +91,7 @@ const Navbar = () => {
                        bg-gradient-to-r from-[#2c3e50] to-[#4ca1af]
                        bg-clip-text text-transparent
                        animate-gradient-x">
-                Creative Mind | Code Master | Solution Seeker
+                Frontend Engineer | React Expert | JavaScript Developer
               </span>
             </div>
           </div>

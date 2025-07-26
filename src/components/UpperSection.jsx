@@ -7,11 +7,12 @@ import {
   FaEnvelope,
   FaDownload,
   FaFileAlt,
+  FaDiscord,
 } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 import profile from "../assets/profile-pic.jpeg";
-import resume from "../assets/farhan_resume_2025.pdf";
+import resume from "../assets/David_Resume.pdf";
 import { useDarkMode } from "../DarkModeContext";
 
 const UpperSection = () => {
@@ -20,34 +21,15 @@ const UpperSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const dynamicTexts = [
-    "Full Stack Developer",
     "React Specialist",
-    "UI/UX Designer",
     "Problem Solver",
-    "software Developer",
-    "Tech Enthusiast",
-    "Open Source Contributor",
     "Web Developer",
     "JavaScript Lover",
     "Next.js Advocate",
     "TypeScript Developer",
     "Node.js Backend Developer",
-    "Database Enthusiast",
-    
-    "Agile Practitioner",
-    "DevOps Enthusiast",
     "Software Engineer",
     "Tech Innovator",
-    "Creative Coder",
-    "Digital Creator",
-    "Tech Explorer",
-    "Tech Enthusiast",
-    "Tech Innovator",
-    "Tech Creator",
-    "Tech Visionary",
-    "Tech Leader",
-    
-
   ];
 
   // Simple typewriter effect
@@ -191,7 +173,7 @@ const UpperSection = () => {
                 className="text-4xl lg:text-5xl font-bold mb-6"
               >
                 <span className="bg-gradient-to-r from-[#4ca1af] to-[#2c3e50] bg-clip-text text-transparent">
-                  Farhanur Rahman
+                  David Gill
                 </span>
               </motion.h1>
 
@@ -212,11 +194,9 @@ const UpperSection = () => {
                 className={`text-lg mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 ${
                   darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
-              >
-                A goal-oriented software developer with experience in building
-                web applications using modern technologies like React, Next.js,
-                and more. Seeking to leverage my technical skills to deliver
-                exceptional user experiences.
+              ><p>Frontend developer with 7+ years of experience building fast, modern web apps using React, Next.js, and TypeScript. </p>
+               
+               I've worked on high-impact projects at Meta and Netflix, and love creating smooth, scalable UI experiences. Always learning, always coding — and always up for a good remote challenge.
               </motion.p>
 
               {/* Social Links & Resume */}
@@ -228,22 +208,22 @@ const UpperSection = () => {
                 {[
                   {
                     icon: FaGithub,
-                    href: "https://github.com/farhanrahman0027",
+                    href: "https://github.com/redforest217",
                     label: "GitHub",
                   },
                   {
                     icon: FaLinkedin,
-                    href: "https://www.linkedin.com/in/farhanur-rahman/",
+                    href: "https://www.linkedin.com/in/david-g-84296196",
                     label: "LinkedIn",
                   },
                   {
-                    icon: SiLeetcode,
-                    href: "https://leetcode.com/u/farhan_rahman0027/",
-                    label: "Leetcode",
+                    icon: FaDiscord,
+                    href: "https://discord.com/invite/fdfe24124",
+                    label: "Discord",
                   },
                   {
                     icon: FaEnvelope,
-                    href: "mailto:your.email@example.com",
+                    href: "mailto:crackfire217@gmail.com",
                     label: "Email",
                   },
                 ].map(({ icon: Icon, href, label }) => (
@@ -264,7 +244,7 @@ const UpperSection = () => {
                 {/* Resume Button */}
                 <a
                   href={resume}
-                  download="Farhan_Resume"
+                  download="David_Gill_Resume.pdf"
                   className={`flex items-center gap-2 px-4 py-3 rounded-full transition-all duration-200 hover:scale-105 ${
                     darkMode
                       ? "bg-gray-800 text-gray-300 hover:bg-gradient-to-r hover:from-[#2c3e50] hover:to-[#4ca1af] hover:text-white border border-gray-700"

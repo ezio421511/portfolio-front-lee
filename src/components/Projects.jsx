@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useDarkMode } from "../DarkModeContext"; // Import the hook
-import homepage1 from "../assets/project1_homepage.png";
-import homepage2 from "../assets/project2_homepage.png";
-import homepage3 from "../assets/project3_homepage.png";
+import homepage1 from "../assets/project1_homepage.jpg";
+import homepage2 from "../assets/project2_homepage.jpg";
+import homepage3 from "../assets/project6_homepage.png";
 import homepage4 from "../assets/project4_homepage.png";
 import homepage5 from "../assets/project5_homepage.png";
-import homepage6 from "../assets/project6_homepage.png";
+import homepage6 from "../assets/project6_homepage.jpg";
 const Projects = () => {
   const { darkMode } = useDarkMode();
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -13,61 +13,42 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "NextGen Edu",
-      subtitle: "E-Learning Platform",
-      description: "A comprehensive educational platform with AI-powered learning recommendations and interactive features for modern digital education.",
+      title: "Talent Trail",
+      subtitle: "Modern job board application",
+      description: "Talent Trail is a modern job board application built with **Next.js**, **Tailwind CSS**, and **ShadCN UI**. It connects job seekers and employers seamlessly, offering advanced features like job filtering.",
       details: [
         "Course Management for creation, enrollment, and progress tracking",
-        "Live Classes & Quizzes for interactive learning and assessments", 
-        "Performance Analytics with dashboards and progress insights",
-        "AI-Powered Learning with smart recommendations and summaries",
+        "Advanced job filtering and search functionality",
+        "various page layouts and components using ShadCN UI",
+        "Responsive design for optimal viewing on all devices",
+        "Real-time updates and notifications for job seekers and employers",
       ],
-      technologies: ["React", "Node.js", "MongoDB", "AI/ML", "WebRTC"],
+      technologies: ["JavaScript", "Node.js", "Next.js", "ShadCN UI", "Tailwind CSS"],
       image: homepage1,
-      link: "https://nextgenedu.vercel.app/",
-      category: "Full Stack",
-      status: "Live"
-    },
-    {
-      id: 2,
-      title: "DesiCrave",
-      subtitle: "Indian Restaurant Website",
-      description: "A modern, fully-featured restaurant website providing a complete digital presence for an authentic Indian restaurant with interactive features.",
-      details: [
-        "Beautiful Homepage with hero section, featured dishes, and testimonials",
-        "Interactive Menu with category filtering and dish details",
-        "Online Reservations system with form validation",
-        "Photo Gallery with filtering and lightbox view",
-        "Customer Reviews section with rating statistics",
-        "Fully Responsive design that works on all devices",
-        "Modern UI/UX with smooth animations and transitions",
-        "SEO Optimized structure and metadata",
-      ],
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
-      image:  homepage2,
-      link: "https://desi-crave.vercel.app/", // Add actual link when available
+      link: "https://next-job-board-module.vercel.app/",
       category: "Frontend",
       status: "Live"
     },
-    {
-      id: 3,
-      title: "SkyWay",
-      subtitle: "Flight Booking System",
-      description: "A responsive full-stack flight booking application with dynamic pricing, smart search, and integrated wallet system.",
+       {
+      id: 2,
+      title: "Car Finder App",
+      subtitle: "Automotive Discovery",
+      description: "An interactive car discovery application with advanced search, wishlist functionality, and smooth animations.",
       details: [
-        "Smart Flight Search: Auto-suggest for cities and airports",
-        "Dynamic Pricing: Prices adjust based on user activity", 
-        "Wallet System: ₹50,000 virtual wallet for bookings",
-        "PDF Tickets: Generates downloadable flight vouchers",
+        "Search cars by name or apply advanced filters to find specific models",
+        "Save favorite cars to a wishlist for easy access and comparison",
+        "Smooth Animations: Enhanced user experience with Framer Motion transitions",
+        "Fetch car data dynamically from an external API or mock data source",
       ],
-      technologies: ["Next.js", "Tailwind CSS", "PostgreSQL", "Payment Gateway"],
-      image: homepage3,
-      link: "https://sky-way-phi.vercel.app/",
-      category: "Full Stack",
+      technologies: ["React", "Framer Motion", "API Integration", "Tailwind CSS"],
+      image: homepage3, 
+      link: "https://car-finder-app-seven.vercel.app/",
+      category: "Frontend",
       status: "Live"
     },
+  
     {
-      id: 4,
+      id: 3,
       title: "ShopHub",
       subtitle: "E-Commerce Platform",
       description: "A dynamic and responsive e-commerce website with advanced filtering, cart management, and seamless user experience.",
@@ -81,6 +62,27 @@ const Projects = () => {
       image: homepage4,
       link: "https://e-commerce-rust-six-77.vercel.app/",
       category: "Frontend",
+      status: "Live"
+    },
+
+      {
+      id: 4,
+      title: "Real-time Chat",
+      subtitle: "React Real-Time Chat Application",
+      description: "A real-time chat application with Node.js, Prisma, GraphQL, Next.js, React.js and Apollo",
+      details: [
+        "Real-time messaging with Socket.io for instant communication",
+        "grey-theme and responsive design for a modern look",
+        "User authentication and session management",
+        "User-friendly interface with smooth animations",
+        "Supports multiple chat rooms and private messaging",
+        "Private conversations, Group conversations",
+        "Search by conversations, users and messages",
+      ],
+      technologies: ["React",  "Tailwind CSS", "Node.js", "Apollio", "GraphQL", "Prisma"],
+      image:  homepage2,
+      link: "https://real-time-chat-prisma-dg.vercel.app/", // Add actual link when available
+      category: "Frontend + Backend",
       status: "Live"
     },
     {
@@ -100,23 +102,25 @@ const Projects = () => {
       category: "Frontend",
       status: "Live"
     },
-    {
+      {
       id: 6,
-      title: "Car Finder App",
-      subtitle: "Automotive Discovery",
-      description: "An interactive car discovery application with advanced search, wishlist functionality, and smooth animations.",
+      title: "Simple Todo Application (Vue.js)",
+      subtitle: "Todo App",
+      description: "A light and simple todo application built with Vue.js, featuring basic CRUD operations and local storage.",
       details: [
-        "Search cars by name or apply advanced filters to find specific models",
-        "Save favorite cars to a wishlist for easy access and comparison",
-        "Smooth Animations: Enhanced user experience with Framer Motion transitions",
-        "Fetch car data dynamically from an external API or mock data source",
+        "Manages todo items with create, read, update, and delete operations",
+        "Uses local storage for data persistence",
+        "Responsive design with a clean and minimalistic UI",
+        "Supports basic todo functionalities like marking as complete and deleting",
+        "Includes a filter to view all, completed, or pending todos",
       ],
-      technologies: ["React", "Framer Motion", "API Integration", "Tailwind CSS"],
-      image: homepage6, 
-      link: "https://car-finder-app-seven.vercel.app/",
-      category: "Frontend",
+      technologies: ["Vue.js", "CSS3", "JavaScript", "Local Storage"],
+      image: homepage6,
+      link: "https://simple-todo-app-vue-dg.netlify.app/",
+      category: "Frontend + Firebase",
       status: "Live"
     },
+
   ];
 
   // Custom Icons
@@ -323,28 +327,8 @@ const Projects = () => {
             ? "bg-gradient-to-r from-slate-800/50 to-slate-700/50 border border-slate-600/50" 
             : "bg-gradient-to-r from-gray-50 to-white border border-gray-200/50"
         }`}>
-          <h3 className="text-xl font-bold mb-2">Interested in Collaboration?</h3>
-          <p className={`mb-4 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-            Let's work together to bring your ideas to life
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <a
-              href="#contact"
-              className="px-6 py-3 bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-            >
-              Get In Touch
-            </a>
-            <a
-              href="#about"
-              className={`px-6 py-3 rounded-full font-semibold border-2 transition-all duration-300 hover:scale-105 ${
-                darkMode
-                  ? "border-slate-600 text-gray-300 hover:border-[#2c3e50] hover:text-[#4ca1af]"
-                  : "border-gray-300 text-gray-700 hover:border-[#4ca1af] hover:text-[#2c3e50]"
-              }`}
-            >
-              Learn More
-            </a>
-          </div>
+          <h3 className="text-xl font-bold mb-2">Glad you visited my portfolio—thank you!</h3>
+         
         </div>
       </div>
     </section>

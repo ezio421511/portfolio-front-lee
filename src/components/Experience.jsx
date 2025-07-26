@@ -1,25 +1,65 @@
 import React from "react";
 import { useDarkMode } from "../DarkModeContext"; // Import the dark mode context
+import { FaSpotify } from "react-icons/fa";
+import { SiNetflix } from "react-icons/si";
+import { BsMeta } from "react-icons/bs";
 const experiences = [
   {
     id: 1,
-    role: "Web Developer Intern",
-    company: "Ministry of Electronics & Information Technology",
-    companyShort: "MeitY, Govt. of India",
-    location: "Hyderabad, MANUU",
-    duration: "March 2024 - June 2024",
+    role: "Frontend Developer Intern",
+    company: "Spotify",
+    
+    location: "Atlanta, Georgia",
+    duration: "June 2017 - August 2017",
     type: "Internship",
     technologies: ["React.js", "HTML5", "CSS3", "JavaScript", "Bootstrap", "Material-UI", "SASS"],
     description: [
       "Developed dynamic, user-friendly web interfaces using modern React.js architecture and best practices",
-      "Implemented responsive design solutions with Bootstrap and Material-UI, ensuring seamless cross-device compatibility",
-      "Enhanced application performance and user experience through optimized frontend development techniques",
-      "Collaborated with government stakeholders to deliver innovative digital solutions for public services"
+      "Assist in developing frontend features and UI components.",
+     
     ],
+    icon: < FaSpotify />, // Custom icon component
     achievements: [
       "Successfully delivered 3+ web applications within the internship period",
-      "Improved user interface responsiveness by 40% through efficient CSS and JavaScript optimization",
-      "Contributed to government digitization initiatives serving thousands of users"
+      "Contributed to internal tools using React.js, gaining experience with SPA development and component-based design",
+      "Learned Git workflows and collaborated on version-controlled projects in a team setting"
+    ]
+  },
+  {
+    id: 2,
+    role: "UI Engineer",
+    company: "Netflix",
+   
+    location: "Atlanta, Georgia",
+    duration: "March 2018 - June 2022",
+    type: "Full time - Remote",
+    technologies: ["React.js", "Redux", "CSS3", "JavaScript", "Tailwind CSS", , "GraphQL"],
+    description: [
+      "Design and implement responsive user interfaces, Work with backend teams to integrate APIs",
+      "Maintain UI components and ensure cross-browser compatibility."
+    ],
+    icon: < SiNetflix />, // Custom icon component
+    achievements: [
+      " Developed user-facing features with React.js and Tailwind CSS for high-traffic video and content platforms",
+      "Played a key role in modernizing legacy code, improving maintainability and reducing technical debt"
+    ]
+  },
+  {
+    id: 3,
+    role: "Software Engineer",
+    company: "Meta",
+    location: "Atlanta, Georgia",
+    duration: "June 2022 - Present",
+    type: "Full Time - Remote",
+    technologies: ["React.js", "TypeScript", "JavaScript", "Next.js", "Tailwind CSS", "GraphQL", "Zustand", "Jest"],
+    description: [
+      "Design and develop web applications. Collaborate with UX/UI designers using React.js and related technologies",
+      "Integrate with backend APIs (REST, GraphQL) to fetch and manage data, Optimize applications for speed and scalability.",
+      "Collaborate with designers and engineers to implement new features, enhance existing tools, and integrate internal systems."
+    ],
+    icon: <BsMeta/>, // Custom icon component
+    achievements: [
+     
     ]
   },
 ];
@@ -125,9 +165,6 @@ const Experience = () => {
                         }`}>
                           {exp.company}
                         </p>
-                        <p className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-                          {exp.companyShort}
-                        </p>
                       </div>
 
                       {/* Meta Information */}
@@ -157,8 +194,10 @@ const Experience = () => {
                         ? "bg-indigo-500/10 border border-indigo-500/30" 
                         : "bg-indigo-50 border border-indigo-200"
                     }`}>
-                      <div className={`w-12 h-12 ${darkMode ? "text-indigo-400" : "text-indigo-600"}`}>
-                        <BriefcaseIcon />
+                      <div className={`w-8 h-8 ${darkMode ? "text-indigo-400" : "text-indigo-600"} ` }>
+                        <p className="text-4xl m-auto"> {exp.icon}</p>
+                       
+                        
                       </div>
                     </div>
                   </div>
