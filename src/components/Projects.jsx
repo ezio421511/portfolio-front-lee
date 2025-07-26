@@ -5,7 +5,7 @@ import homepage2 from "../assets/project2_homepage.jpg";
 import homepage3 from "../assets/project6_homepage.png";
 import homepage4 from "../assets/project4_homepage.png";
 import homepage5 from "../assets/project5_homepage.png";
-import homepage6 from "../assets/project6_homepage.jpg";
+import homepage6 from "../assets/project6_homepage.JPG";
 const Projects = () => {
   const { darkMode } = useDarkMode();
   const [hoveredProject, setHoveredProject] = useState(null);
