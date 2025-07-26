@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDarkMode } from "../DarkModeContext"; // Import the hook
-import homepage1 from "../assets/project1_homepage.jpg";
+import homepage1 from "../assets/project1_homepage.JPG";
 import homepage2 from "../assets/project2_homepage.jpg";
 import homepage3 from "../assets/project6_homepage.png";
 import homepage4 from "../assets/project4_homepage.png";
