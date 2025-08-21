@@ -13,6 +13,17 @@ import {
 import { useDarkMode } from "../DarkModeContext";
 
 const Contact = () => {
+  const me = {
+    name: "",
+    email: "",
+    phone: "+1 (917) 764-4520",
+    location: "Atlanta, GA, USA",
+    linkedin: "",
+    github: "",
+    discord: "Farhanur#2170",
+  }
+  const username = me.name
+  const useremail = me.email
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -68,17 +79,17 @@ const Contact = () => {
         reply_to: formData.email,
         subject: formData.subject || 'New Contact Form Message',
         message: formData.message,
-        to_name: 'David Gill',
-        to_email: 'crackfire217@gmail.com'
+        to_name: me.name,
+        to_email: me.email
       };
 
       // Prepare template parameters for thank you email (to user)
       const thankYouParams = {
         to_name: formData.name,
         to_email: formData.email,
-        reply_to: 'crackfire217@gmail.com',
+        reply_to: me.email,
         subject: formData.subject || 'New Contact Form Message',
-        from_name: 'David Gill',
+        from_name: me.name,
         user_email: formData.email // Alternative parameter name
       };
 
@@ -137,14 +148,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "crackfire217@gmail.com",
-      href: "mailto:crackfire217@gmail.com",
+      value: me.email,
+      href: `mailto:${me.email}`,
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (678) 397-8986",
-      href: "tel:+16783978986",
+      value: me.phone,
+      href: `tel:${me.phone}`,
     },
     {
       icon: MapPin,
@@ -158,15 +169,15 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/farhanur-rahman/",
+      href: me.linkedin,
       color: "hover:text-blue-600",
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/redforest217",
+      href: me.github,
       color: "hover:text-gray-800",
-    },
+    }
   ];
 
   return (
