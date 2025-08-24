@@ -241,7 +241,7 @@ const UpperSection = () => {
                 ))}
 
                 {/* Resume Button */}
-                <a
+{/*                 <a
                   href={resume}
                   download="David_Lee_Resume.pdf"
                   className={`flex items-center gap-2 px-4 py-3 rounded-full transition-all duration-200 hover:scale-105 ${
@@ -253,7 +253,7 @@ const UpperSection = () => {
                   <FaFileAlt size={16} />
                   <span className="font-medium text-sm">Resume</span>
                   <FaDownload size={12} />
-                </a>
+                </a> */}
               </motion.div>
 
               {/* CTA Buttons */}
