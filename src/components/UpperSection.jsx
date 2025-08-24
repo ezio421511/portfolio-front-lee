@@ -9,7 +9,6 @@ import {
   FaFileAlt,
   FaDiscord,
 } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
 import profile from "../assets/profile-pic.jpeg";
 import resume from "../assets/David_Resume.pdf";
@@ -21,15 +20,16 @@ const UpperSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const dynamicTexts = [
-    "React Specialist",
+    "Senior Frontend Engineer",
+    "React & Next.js Specialist",
+    "Performance Optimizer",
+    "TypeScript Enthusiast",
+    "UI/UX Advocate",
+    "Design System Builder",
+    "Scalable App Architect",
     "Problem Solver",
-    "Web Developer",
-    "JavaScript Lover",
-    "Next.js Advocate",
-    "TypeScript Developer",
-    "Node.js Backend Developer",
-    "Software Engineer",
-    "Tech Innovator",
+    "Tech Mentor",
+    "Cloud-Ready Engineer"
   ];
 
   // Simple typewriter effect
@@ -58,7 +58,7 @@ const UpperSection = () => {
     }
   };
 
-  // Simple animation variants
+  // Animation variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -68,10 +68,9 @@ const UpperSection = () => {
     },
   };
 
-  // Floating animation keyframes
   const floatAnimation = {
     animate: {
-      y: [0, -10, 0], // move up and down
+      y: [0, -10, 0],
       transition: {
         duration: 4,
         repeat: Infinity,
@@ -84,9 +83,7 @@ const UpperSection = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
+      transition: { staggerChildren: 0.2 },
     },
   };
 
@@ -99,7 +96,7 @@ const UpperSection = () => {
             : "bg-gradient-to-br from-gray-50 to-white text-gray-900"
         }`}
       >
-        {/* Simple background decoration */}
+        {/* Background decoration */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div
             className={`absolute top-1/4 left-1/4 w-72 h-72 rounded-full blur-3xl opacity-10 ${
@@ -128,9 +125,9 @@ const UpperSection = () => {
               <div className="relative">
                 <motion.img
                   src={profile}
-                  alt="Farhanur Rahman"
+                  alt="David Lee"
                   className="p-12 rounded-full w-76 h-72 lg:w-80 lg:h-80 object-cover mx-auto shadow-lg"
-                  {...floatAnimation} // attach floating animation
+                  {...floatAnimation}
                   whileHover={{
                     scale: 1.05,
                     rotate: 1,
@@ -138,7 +135,7 @@ const UpperSection = () => {
                   }}
                 />
 
-                {/* Simple floating icons */}
+                {/* Floating icons */}
                 <motion.div
                   className="absolute -top-4 -right-4 p-3 rounded-full bg-[#4ca1af] text-white shadow-lg"
                   whileHover={{ scale: 1.2, rotate: 10 }}
@@ -173,7 +170,7 @@ const UpperSection = () => {
                 className="text-4xl lg:text-5xl font-bold mb-6"
               >
                 <span className="bg-gradient-to-r from-[#4ca1af] to-[#2c3e50] bg-clip-text text-transparent">
-                  David Gill
+                  David Lee
                 </span>
               </motion.h1>
 
@@ -194,9 +191,12 @@ const UpperSection = () => {
                 className={`text-lg mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0 ${
                   darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
-              ><p>Frontend developer with 7+ years of experience building fast, modern web apps using React, Next.js, and TypeScript. </p>
-               
-               I've worked on high-impact projects at Meta and Netflix, and love creating smooth, scalable UI experiences. Always learning, always coding — and always up for a good remote challenge.
+              >
+                Frontend engineer with 7+ years of experience building
+                high-performance, accessible, and secure applications. 
+                I've worked on impactful projects at <strong>Stripe</strong>, <strong>Pinterest</strong>, and <strong>Nuna</strong>, 
+                specializing in React, Next.js, and TypeScript. 
+                Passionate about performance tuning, design systems, and crafting scalable UI/UX experiences.
               </motion.p>
 
               {/* Social Links & Resume */}
@@ -204,7 +204,6 @@ const UpperSection = () => {
                 variants={fadeInUp}
                 className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8"
               >
-                {/* Social Icons */}
                 {[
                   {
                     icon: FaGithub,
@@ -213,17 +212,17 @@ const UpperSection = () => {
                   },
                   {
                     icon: FaLinkedin,
-                    href: "https://www.linkedin.com/in/david-g-84296196",
+                    href: "https://linkedin.com/in/dkclee",
                     label: "LinkedIn",
                   },
                   {
                     icon: FaDiscord,
-                    href: "https://discord.com/invite/fdfe24124",
+                    href: "https://discord.com", // update with your actual Discord/username if needed
                     label: "Discord",
                   },
                   {
                     icon: FaEnvelope,
-                    href: "mailto:crackfire217@gmail.com",
+                    href: "mailto:david.g.lee2018@gmail.com",
                     label: "Email",
                   },
                 ].map(({ icon: Icon, href, label }) => (
@@ -244,7 +243,7 @@ const UpperSection = () => {
                 {/* Resume Button */}
                 <a
                   href={resume}
-                  download="David_Gill_Resume.pdf"
+                  download="David_Lee_Resume.pdf"
                   className={`flex items-center gap-2 px-4 py-3 rounded-full transition-all duration-200 hover:scale-105 ${
                     darkMode
                       ? "bg-gray-800 text-gray-300 hover:bg-gradient-to-r hover:from-[#2c3e50] hover:to-[#4ca1af] hover:text-white border border-gray-700"
