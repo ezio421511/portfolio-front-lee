@@ -20,16 +20,15 @@ const UpperSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const dynamicTexts = [
-    "Senior Frontend Engineer",
-    "React & Next.js Specialist",
-    "Performance Optimizer",
-    "TypeScript Enthusiast",
+    "Full Stack Developer",
+    "Vue.js Enthusiast",
+    "Python Backend Engineer",
+    "API Designer",
     "UI/UX Advocate",
-    "Design System Builder",
     "Scalable App Architect",
     "Problem Solver",
     "Tech Mentor",
-    "Cloud-Ready Engineer"
+    "Cloud-Ready Engineer",
   ];
 
   // Simple typewriter effect
@@ -125,7 +124,7 @@ const UpperSection = () => {
               <div className="relative">
                 <motion.img
                   src={profile}
-                  alt="David Lee"
+                  alt="David Vincent"
                   className="p-12 rounded-full w-76 h-72 lg:w-80 lg:h-80 object-cover mx-auto shadow-lg"
                   {...floatAnimation}
                   whileHover={{
@@ -170,7 +169,7 @@ const UpperSection = () => {
                 className="text-4xl lg:text-5xl font-bold mb-6"
               >
                 <span className="bg-gradient-to-r from-[#4ca1af] to-[#2c3e50] bg-clip-text text-transparent">
-                  David Lee
+                  David Vincent
                 </span>
               </motion.h1>
 
@@ -192,11 +191,11 @@ const UpperSection = () => {
                   darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
-                Frontend engineer with 7+ years of experience building
-                high-performance, accessible, and secure applications. 
-                I've worked on impactful projects at <strong>Stripe</strong>, <strong>Pinterest</strong>, and <strong>Nuna</strong>, 
-                specializing in React, Next.js, and TypeScript. 
-                Passionate about performance tuning, design systems, and crafting scalable UI/UX experiences.
+                Full Stack Developer with expertise in building scalable web
+                applications using <strong>Vue.js</strong> on the frontend and
+                <strong> Python</strong> on the backend. Experienced in designing
+                APIs, optimizing performance, and delivering user-friendly
+                interfaces that balance functionality with great UX.
               </motion.p>
 
               {/* Social Links & Resume */}
@@ -217,7 +216,7 @@ const UpperSection = () => {
                   },
                   {
                     icon: FaDiscord,
-                    href: "https://discord.com", // update with your actual Discord/username if needed
+                    href: "https://discord.com",
                     label: "Discord",
                   },
                   {
@@ -239,21 +238,6 @@ const UpperSection = () => {
                     <Icon size={20} />
                   </a>
                 ))}
-
-                {/* Resume Button */}
-{/*                 <a
-                  href={resume}
-                  download="David_Lee_Resume.pdf"
-                  className={`flex items-center gap-2 px-4 py-3 rounded-full transition-all duration-200 hover:scale-105 ${
-                    darkMode
-                      ? "bg-gray-800 text-gray-300 hover:bg-gradient-to-r hover:from-[#2c3e50] hover:to-[#4ca1af] hover:text-white border border-gray-700"
-                      : "bg-white text-gray-700 hover:bg-gradient-to-r hover:from-[#2c3e50] hover:to-[#4ca1af] hover:text-white shadow-md"
-                  }`}
-                >
-                  <FaFileAlt size={16} />
-                  <span className="font-medium text-sm">Resume</span>
-                  <FaDownload size={12} />
-                </a> */}
               </motion.div>
 
               {/* CTA Buttons */}
