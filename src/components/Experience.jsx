@@ -6,60 +6,63 @@ import { BsMeta } from "react-icons/bs";
 const experiences = [
   {
     id: 1,
-    role: "Frontend Developer Intern",
-    company: "Spotify",
-    
-    location: "Atlanta, Georgia",
-    duration: "June 2017 - August 2017",
-    type: "Internship",
-    technologies: ["React.js", "HTML5", "CSS3", "JavaScript", "Bootstrap", "Material-UI", "SASS"],
-    description: [
-      "Developed dynamic, user-friendly web interfaces using modern React.js architecture and best practices",
-      "Assist in developing frontend features and UI components.",
-     
+    role: "Software Engineer",
+    company: "Stripe",
+    location: "San Jose, CA (Hybrid)",
+    duration: "March 2024 - Present",
+    type: "Full Time",
+    technologies: [
+      "React.js", "Next.js", "TypeScript", "GraphQL", "Apollo", "Jest", "Testing Library", "GitHub Actions", "Sentry", "Datadog"
     ],
-    icon: < FaSpotify />, // Custom icon component
+    description: [
+      "Improved Stripe Dashboard load speed by 32% through React + Next.js rebuild, advanced code splitting, and lazy loading.",
+      "Accelerated UI development with reusable React component libraries documented in Storybook.",
+      "Reduced issue resolution time by 40% by integrating Sentry and Datadog for real-time monitoring.",
+      "Integrated GraphQL APIs with Apollo Client, improving data-fetch efficiency by 20%."
+    ],
     achievements: [
-      "Successfully delivered 3+ web applications within the internship period",
-      "Contributed to internal tools using React.js, gaining experience with SPA development and component-based design",
-      "Learned Git workflows and collaborated on version-controlled projects in a team setting"
+      "Delivered high-quality features on schedule by partnering with product and design teams in Agile sprints.",
+      "Set up CI/CD pipelines (GitHub Actions) for frontend services, reducing release cycles from weekly to daily."
     ]
   },
   {
     id: 2,
-    role: "UI Engineer",
-    company: "Netflix",
-   
-    location: "Atlanta, Georgia",
-    duration: "March 2018 - June 2022",
-    type: "Full time - Remote",
-    technologies: ["React.js", "Redux", "CSS3", "JavaScript", "Tailwind CSS", , "GraphQL"],
-    description: [
-      "Design and implement responsive user interfaces, Work with backend teams to integrate APIs",
-      "Maintain UI components and ensure cross-browser compatibility."
+    role: "Frontend Engineer",
+    company: "Pinterest",
+    location: "San Francisco, CA (Remote)",
+    duration: "October 2023 - March 2024",
+    type: "Full Time",
+    technologies: [
+      "React.js", "Next.js", "TypeScript", "Cypress", "Playwright", "GraphQL"
     ],
-    icon: < SiNetflix />, // Custom icon component
+    description: [
+      "Enhanced security for 450M+ users by designing MFA & identity verification flows in Next.js.",
+      "Reduced teen safety incident reports by 22% through UX-driven compliance features.",
+      "Improved app performance by reducing client-side rendering bottlenecks with React optimizations."
+    ],
     achievements: [
-      " Developed user-facing features with React.js and Tailwind CSS for high-traffic video and content platforms",
-      "Played a key role in modernizing legacy code, improving maintainability and reducing technical debt"
+      "Increased deployment reliability with automated end-to-end testing suites (Cypress, Playwright).",
+      "Partnered with cross-functional teams to deliver user-facing features 30% faster within sprint cycles."
     ]
   },
   {
     id: 3,
-    role: "Software Engineer",
-    company: "Meta",
-    location: "Atlanta, Georgia",
-    duration: "June 2022 - Present",
-    type: "Full Time - Remote",
-    technologies: ["React.js", "TypeScript", "JavaScript", "Next.js", "Tailwind CSS", "GraphQL", "Zustand", "Jest"],
-    description: [
-      "Design and develop web applications. Collaborate with UX/UI designers using React.js and related technologies",
-      "Integrate with backend APIs (REST, GraphQL) to fetch and manage data, Optimize applications for speed and scalability.",
-      "Collaborate with designers and engineers to implement new features, enhance existing tools, and integrate internal systems."
+    role: "Fullstack Engineer",
+    company: "Nuna Inc",
+    location: "San Francisco, CA (Remote)",
+    duration: "February 2021 - October 2023",
+    type: "Full Time",
+    technologies: [
+      "React.js", "Redux Toolkit", "Context API", "D3.js", "Chart.js", "WebSockets", "Docker", "GitHub Actions"
     ],
-    icon: <BsMeta/>, // Custom icon component
+    description: [
+      "Cut healthcare dashboard load time from 4s to 1.5s using WebSockets and optimized state management.",
+      "Built data visualization components (D3.js, Chart.js) for real-time clinical insights.",
+      "Achieved full WCAG 2.1 AA compliance with focused accessibility improvements."
+    ],
     achievements: [
-     
+      "Collaborated with design/product to ship mission-critical dashboards ahead of deadlines.",
+      "Enabled zero-downtime releases with automated builds and deployments (GitHub Actions, Docker)."
     ]
   },
 ];
@@ -189,7 +192,7 @@ const Experience = () => {
                     </div>
 
                     {/* Experience Icon */}
-                    <div className={`mt-4 lg:mt-0 lg:ml-6 p-4 rounded-xl ${
+{/*                     <div className={`mt-4 lg:mt-0 lg:ml-6 p-4 rounded-xl ${
                       darkMode 
                         ? "bg-indigo-500/10 border border-indigo-500/30" 
                         : "bg-indigo-50 border border-indigo-200"
@@ -199,7 +202,7 @@ const Experience = () => {
                        
                         
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Technologies Used */}
