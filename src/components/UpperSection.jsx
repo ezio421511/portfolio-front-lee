@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import profile from "../assets/profile-pic.jpeg";
-import resume from "../assets/DavidLeeResume.pdf";
 import { useDarkMode } from "../DarkModeContext";
 
 const UpperSection = () => {
@@ -223,12 +222,7 @@ const UpperSection = () => {
                     icon: FaEnvelope,
                     href: "mailto:david.g.lee2018@gmail.com",
                     label: "Email",
-                  },
-                  {
-                    icon: FaFileAlt,
-                    href: resume,
-                    label: "Resume",
-                  },
+                  }
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={label}
