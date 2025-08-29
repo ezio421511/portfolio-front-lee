@@ -14,8 +14,8 @@ import { useDarkMode } from "../DarkModeContext";
 
 const Contact = () => {
   const me = {
-    name: "",
-    email: "",
+    name: "David Lee",
+    email: "david.g.lee2018@gmail.com",
     phone: "+1 (917) 764-4520",
     location: "Atlanta, GA, USA",
     linkedin: "",
