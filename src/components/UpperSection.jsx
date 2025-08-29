@@ -7,11 +7,11 @@ import {
   FaEnvelope,
   FaDownload,
   FaFileAlt,
-  FaDiscord,
+  FaGlobe,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import profile from "../assets/profile-pic.jpeg";
-import resume from "../assets/David_Resume.pdf";
+import resume from "../assets/DavidLeeResume.pdf";
 import { useDarkMode } from "../DarkModeContext";
 
 const UpperSection = () => {
@@ -20,15 +20,14 @@ const UpperSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const dynamicTexts = [
-    "Full Stack Developer",
-    "Vue.js Enthusiast",
-    "Python Backend Engineer",
-    "API Designer",
-    "UI/UX Advocate",
-    "Scalable App Architect",
-    "Problem Solver",
-    "Tech Mentor",
-    "Cloud-Ready Engineer",
+    "Frontend Software Engineer",
+    "React.js / Next.js Specialist",
+    "TypeScript Advocate",
+    "Performance Optimizer",
+    "UI/UX Problem Solver",
+    "CI/CD Automation Engineer",
+    "Scalable System Builder",
+    "Cloud-Ready Developer",
   ];
 
   // Simple typewriter effect
@@ -124,7 +123,7 @@ const UpperSection = () => {
               <div className="relative">
                 <motion.img
                   src={profile}
-                  alt="David Vincent"
+                  alt="David Lee"
                   className="p-12 rounded-full w-76 h-72 lg:w-80 lg:h-80 object-cover mx-auto shadow-lg"
                   {...floatAnimation}
                   whileHover={{
@@ -169,7 +168,7 @@ const UpperSection = () => {
                 className="text-4xl lg:text-5xl font-bold mb-6"
               >
                 <span className="bg-gradient-to-r from-[#4ca1af] to-[#2c3e50] bg-clip-text text-transparent">
-                  David Vincent
+                  David Lee
                 </span>
               </motion.h1>
 
@@ -191,11 +190,12 @@ const UpperSection = () => {
                   darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
-                Full Stack Developer with expertise in building scalable web
-                applications using <strong>Vue.js</strong> on the frontend and
-                <strong> Python</strong> on the backend. Experienced in designing
-                APIs, optimizing performance, and delivering user-friendly
-                interfaces that balance functionality with great UX.
+                Frontend Engineer with over 7 years of experience building
+                high-performance, accessible, and secure applications at Stripe,
+                Pinterest, and Nuna. Specialized in{" "}
+                <strong>React.js</strong>, <strong>Next.js</strong>, and{" "}
+                <strong>TypeScript</strong>, with proven results in performance
+                tuning, CI/CD automation, and delivering world-class UX at scale.
               </motion.p>
 
               {/* Social Links & Resume */}
@@ -215,19 +215,26 @@ const UpperSection = () => {
                     label: "LinkedIn",
                   },
                   {
-                    icon: FaDiscord,
-                    href: "https://discord.com",
-                    label: "Discord",
+                    icon: FaGlobe,
+                    href: "https://dkcleedev.vercel.app",
+                    label: "Portfolio",
                   },
                   {
                     icon: FaEnvelope,
                     href: "mailto:david.g.lee2018@gmail.com",
                     label: "Email",
                   },
+                  {
+                    icon: FaFileAlt,
+                    href: resume,
+                    label: "Resume",
+                  },
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={label}
                     href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`p-3 rounded-full transition-all duration-200 hover:scale-105 ${
                       darkMode
                         ? "bg-gray-800 text-gray-300 hover:bg-blue-600 hover:text-white"
