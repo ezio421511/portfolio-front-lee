@@ -10,7 +10,7 @@ import {
   FaGlobe,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import profile from "../assets/profile-pic.jpeg";
+import profile from "../assets/avatar.jpeg";
 import { useDarkMode } from "../DarkModeContext";
 
 const UpperSection = () => {
