@@ -8,8 +8,8 @@ const experiences = [
     id: 1,
     role: "Software Engineer",
     company: "Stripe",
-    location: "San Jose, CA (Hybrid)",
-    duration: "March 2024 - Present",
+    location: "San Francisco, CA",
+    duration: "2024 - Present",
     type: "Full Time",
     technologies: [
       "React.js", "Next.js", "TypeScript", "GraphQL", "Apollo", "Jest", "Testing Library", "GitHub Actions", "Sentry", "Datadog"
@@ -30,7 +30,7 @@ const experiences = [
     role: "Frontend Engineer",
     company: "Pinterest",
     location: "San Francisco, CA (Remote)",
-    duration: "October 2023 - March 2024",
+    duration: "2023 - 2024",
     type: "Full Time",
     technologies: [
       "React.js", "Next.js", "TypeScript", "Cypress", "Playwright", "GraphQL"
@@ -49,8 +49,8 @@ const experiences = [
     id: 3,
     role: "Fullstack Engineer",
     company: "Nuna Inc",
-    location: "San Francisco, CA (Remote)",
-    duration: "February 2021 - October 2023",
+    location: "San Francisco, CA",
+    duration: "2021 - 2023",
     type: "Full Time",
     technologies: [
       "React.js", "Redux Toolkit", "Context API", "D3.js", "Chart.js", "WebSockets", "Docker", "GitHub Actions"
@@ -157,9 +157,6 @@ const Experience = () => {
                         <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
                           {exp.role}
                         </h3>
-                        <span className="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-400 rounded-full">
-                          {exp.type}
-                        </span>
                       </div>
                       
                       <div className="space-y-2 mb-4">
