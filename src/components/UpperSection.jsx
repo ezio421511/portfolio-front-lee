@@ -19,11 +19,11 @@ const UpperSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const dynamicTexts = [
-    "Frontend Software Engineer",
+    "Fullstack Software Engineer",
     "React.js / Next.js Specialist",
     "TypeScript Advocate",
     "Performance Optimizer",
-    "UI/UX Problem Solver",
+    "Python Developer",
     "CI/CD Automation Engineer",
     "Scalable System Builder",
     "Cloud-Ready Developer",
@@ -122,7 +122,7 @@ const UpperSection = () => {
               <div className="relative">
                 <motion.img
                   src={profile}
-                  alt="David Lee"
+                  alt="David Gill"
                   className="p-12 rounded-full w-76 h-72 lg:w-80 lg:h-80 object-cover mx-auto shadow-lg"
                   {...floatAnimation}
                   whileHover={{
@@ -157,7 +157,7 @@ const UpperSection = () => {
                     darkMode ? "text-[#4ca1af]" : "text-[#2c3e50]"
                   }`}
                 >
-                  Hello, I'm
+                  Hello, Nice to meet you. I'm
                 </span>
               </motion.div>
 
@@ -167,7 +167,7 @@ const UpperSection = () => {
                 className="text-4xl lg:text-5xl font-bold mb-6"
               >
                 <span className="bg-gradient-to-r from-[#4ca1af] to-[#2c3e50] bg-clip-text text-transparent">
-                  David Lee
+                  David.
                 </span>
               </motion.h1>
 
@@ -189,7 +189,7 @@ const UpperSection = () => {
                   darkMode ? "text-gray-300" : "text-gray-600"
                 }`}
               >
-                Frontend Engineer with over 7 years of experience building
+                Software Engineer with over 7 years of experience building
                 high-performance, accessible, and secure applications at Stripe,
                 Pinterest, and Nuna. Specialized in{" "}
                 <strong>React.js</strong>, <strong>Next.js</strong>, and{" "}
