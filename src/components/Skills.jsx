@@ -40,7 +40,7 @@ const Skills = () => {
     icon: <Code2 className="w-4 h-4" />,
     color: "from-[#2c3e50] to-[#4ca1af]",
     skills: [
-      { name: "Python", level: 45, icon: <FaPython className="text-yellow-400" /> },
+      { name: "Python", level: 80, icon: <FaPython className="text-yellow-400" /> },
       { name: "JavaScript", level: 90, icon: <FaJs className="text-yellow-300" /> },
       { name: "TypeScript", level: 80, icon: <SiTypescript className="text-blue-400" /> },
     ],
