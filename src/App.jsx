@@ -18,7 +18,6 @@ const App = () => {
       <UpperSection />
 {/*       <About /> */}
       <Skills />
-      <Education />  
       <Experience />
 
 
