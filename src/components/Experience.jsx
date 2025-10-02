@@ -27,7 +27,7 @@ const experiences = [
   },
   {
     id: 2,
-    role: "Frontend Engineer",
+    role: "Software Engineer",
     company: "Pinterest",
     location: "San Francisco, CA (Remote)",
     duration: "2023 - 2024",
@@ -53,7 +53,7 @@ const experiences = [
     duration: "2021 - 2023",
     type: "Full Time",
     technologies: [
-      "React.js", "Redux Toolkit", "Context API", "D3.js", "Chart.js", "WebSockets", "Docker", "GitHub Actions"
+      "React.js", "Django", "Flask", "MongoDB", "JavaScript", "WebSockets", "Git", "GitHub Actions"
     ],
     description: [
       "Cut healthcare dashboard load time from 4s to 1.5s using WebSockets and optimized state management.",
@@ -62,6 +62,26 @@ const experiences = [
     ],
     achievements: [
       "Collaborated with design/product to ship mission-critical dashboards ahead of deadlines.",
+      "Enabled zero-downtime releases with automated builds and deployments (GitHub Actions, Docker)."
+    ]
+  },
+    {
+    id: 4,
+    role: "Web Developer",
+    company: "Self Employed",
+    location: "Atlanta, GA",
+    duration: "2015 - 2021",
+    type: "Full Time",
+    technologies: [
+      "HTML", "CSS", "JavaScript", "React.js", "Vue.js", "Ajax", "Bootstrap", "PHP"
+    ],
+    description: [
+      "Built client-facing web portals using React, JavaScript, and SCSS.",
+      "Improved page load performance and SEO, increasing user satisfaction and engagement.",
+      "Implemented web modules with JavaScript, HTML/CSS, and backend integrations."
+    ],
+    achievements: [
+      "Developed 20 designs and web-based applications",
       "Enabled zero-downtime releases with automated builds and deployments (GitHub Actions, Docker)."
     ]
   },
