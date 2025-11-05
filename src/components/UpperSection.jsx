@@ -167,7 +167,7 @@ const UpperSection = () => {
                 className="text-4xl lg:text-5xl font-bold mb-6"
               >
                 <span className="bg-gradient-to-r from-[#4ca1af] to-[#2c3e50] bg-clip-text text-transparent">
-                  David.
+                  David Lee.
                 </span>
               </motion.h1>
 
